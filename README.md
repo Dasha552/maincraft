@@ -78,7 +78,6 @@ if (screenshots[3]) screenshots[3] classList.add('show');
     </main>
 </body>
 </html>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -349,5 +348,3 @@ color: black;
             }
         }
     </script>
-</body>
-</html>
