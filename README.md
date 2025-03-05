@@ -68,7 +68,7 @@ if (screenshots[3]) screenshots[3] classList.add('show');
         <img id="logo" src="C:\Users\Студент\Desktop\настька дашка,т\логотип.webp" alt="Логотип Minecraft"> <!-- Логотип -->
         <nav>
             <img src="иконка.png"> <!-- Иконка 1 -->
-            <img src="RIFF*" alt="Иконка 2"> <!-- Иконка 2 -->
+            <img src="л.webp" alt="Иконка 2"> <!-- Иконка 2 -->
         </nav>
     </header>
     <main>
