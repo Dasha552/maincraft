@@ -1,533 +1,354 @@
+	`   <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Официальный сайт</title>
+    <style>
+        body {
+    background-image: url('C:\Users\Студент\Desktop\настька дашка,т\ajyy.webp'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Растягиваем изображение на весь экран */
+    background-position: center; /* Центрируем изображение */
+    background-attachment: fixed; /* Фон остается фиксированным при прокрутке */   
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        #logo {
+            width: 200px; /* Размер логотипа */ 
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav img {
+            width: 50px; /* Размер иконок меню */
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        nav img:hover {
+            transform: scale(1.1);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .screenshot {
+            width: 300px; /* Размер скриншотов */
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+if (category === 'all') {
+screenshots. forEach(img => img-classList.add('show'));
+} else if (category == 'category1') {
+ if (screenshots [0]) {
+screenshots[0].classList.add('show'); 
+} else if (category === 'category2') {
+if (screenshots[1]) screenshots [1].classlist.add('show'); 
+if (screenshots[2]) screenshots [2].classList.add('show'); 
+else if (category === 'category3') {
+if (screenshots[3]) screenshots[3] classList.add('show');
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="C:\Users\Студент\Desktop\настька дашка,т\логотип.webp" alt="Логотип Minecraft"> <!-- Логотип -->
+        <nav>
+            <img src="C:\Users\Студент\Desktop\настька дашка,т\иконка.png" alt="Иконка 1"> <!-- Иконка 1 -->
+            <img src="C:\Users\Студент\Desktop\настька дашка,т\л.webp" alt="Иконка 2"> <!-- Иконка 2 -->
+        </nav>
+    </header>
+    <main>
+        <h1>Добро пожаловать в Minecraft!</h1>
+        <h2>Скриншоты игрового процесса</h2>
+        <img class="screenshot" src="C:\Users\Студент\Desktop\настька дашка,т\иг процес.png" alt="Скриншот 1"> <!-- Скриншот 1 -->
+        <img class="screenshot" src="C:\Users\Студент\Desktop\настька дашка,т\игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
+    </main>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft - Официальный сайт</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Основные стили */
+        body {
+            background-image: url('images/ajyy.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: #333; /* Цвет текста по умолчанию */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #logo {
+            width: 200px;
+            cursor: pointer; /* Изменяем курсор на руку */
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav img {
+            width: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        nav img:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            color: white; /* Цвет текста в main */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .screenshot {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Стили для модального окна */
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed; /* Фиксированное положение */
+            z-index: 1; /* Поверх всего */
+            left: 0;
+            top: 0;
+            width: 100%; /* Полная ширина */
+            height: 100%; /* Полная высота */
+            overflow: auto; /* Включаем прокрутку, если много контента */
+            background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* Центрируем по вертикали и горизонтали */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Ширина контента */
+color: black;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Стили для тёмной темы */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode main {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Стили для новостей и комментариев */
+        #news-section {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .comment {
+            margin-top: 10px;
+            padding: 5px;
+            border-left: 3px solid #ccc;
+        }
+
+        /* Стили для формы комментариев */
+        #comment-form {
+            margin-top: 20px;
+        }
+
+        #comment-form input[type="text"],
+        #comment-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #comment-form button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #comment-form button:hover {
+            background-color: #449d44;
+        }
+
+        /* Стили для переключателя темы */
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 500; /* Чтобы кнопка была поверх всего */
+        }
+
+        #theme-toggle:hover {
+            background-color: #367c39;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img id="logo" src="images/логотип.webp" alt="Логотип Minecraft">
-        <nav>
-            <img src="иконка.png" alt="Иконка 1">
-            <img src="иконка.png" alt="Иконка 2">
-            <img src="иконка.png" alt="Иконка 3">
-            <a href="#news"><img src="" alt="Новости"></a>
-        </nav>
-        <button id="theme-toggle">Сменить тему</button>
-    </header>
+    <button id="theme-toggle">поменять тему</button>
 
     <main>
-        <h1>Добро пожаловать в Minecraft!</h1>
-        <h2>Скриншоты игрового процесса</h2>
-        <div class="screenshots">
-            <img class="screenshot" src="C:\Users\Студент\Desktop\настька дашка,т\иг процесс.webp" alt="Скриншот 1">
-            <img class="screenshot" src="C:\Users\Студент\Desktop\настька дашка,т\иг процес.png" alt="Скриншот 2">
-        </div>
-    </main>
-
-    <section id="news">
-        <h2>Новости</h2>
-        <article class="news-item">
-            <h3>Новая версия Minecraft!</h3>
-            <p>Вышло обновление с новыми блоками и мобами!</p>
-            <p class="news-date">16.05.2024</p>
-            <div class="comments">
-                <h4>Комментарии:</h4>
-                <ul class="comment-list">
-                    </ul>
-                <form class="comment-form">
-                    <input type="text" placeholder="Ваше имя" id="comment-name">
-                    <textarea placeholder="Ваш комментарий" id="comment-text"></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
-        </article>
-        <article class="news-item">
-            <h3>Конкурс построек!</h3>
-            <p>Примите участие в конкурсе и выиграйте ценные призы!</p>
-            <p class="news-date">15.05.2024</p>
-             <div class="comments">
-                <h4>Комментарии:</h4>
-                <ul class="comment-list">
-                </ul>
-                <form class="comment-form">
-                    <input type="text" placeholder="Ваше имя" id="comment-name">
-                    <textarea placeholder="Ваш комментарий" id="comment-text"></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
-        </article>
-    </section>
+       
 
     <!-- Модальное окно -->
-    <div id="modal" class="modal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Привет! Это модальное окно, которое появляется при клике на логотип.</p>
+            <p>Добро пожаловать в наш великолепный сайт!!!!!!!!!!!</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Раздел новостей и комментариев -->
+    <section id="news-section">
+        <h2>Новости</h2>
+
+        <div class="news-item">
+            <h3>Вышло новое обновление Minecraft!</h3>
+            <p>1.у свиней появились новые окрасы</p>
+            <p>2.листья начали опадать</p>
+            <div class="comments">
+                <h4>Комментарии:</h4>
+                <div class="comment">
+                    <b>игрок1:</b> шикарное обновление!
+                </div>
+                <div class="comment">
+                    <b>игрок2:</b> очень понравилось!
+                </div>
+            </div>
+
+            <!-- Форма для добавления комментария -->
+            <form id="comment-form">
+                <input type="text" id="comment-name" placeholder="Ваше имя">
+                <textarea id="comment-text" placeholder="Ваш комментарий"></textarea>
+                <button type="button" onclick="addComment()">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Модальное окно
+        var modal = document.getElementById("myModal");
+        var logo = document.getElementById("logo");
+        var span = document.getElementsByClassName("close")[0];
+
+        logo.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Тёмная тема
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.querySelector('body');
+
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-mode');
+        });
+
+        // Добавление комментария
+        function addComment() {
+            var name = document.getElementById('comment-name').value;
+            var text = document.getElementById('comment-text').value;
+
+            if (name && text) {
+                var commentDiv = document.createElement('div');
+                commentDiv.classList.add('comment');
+                commentDiv.innerHTML = '<b>' + name + ':</b> ' + text;
+
+                var commentsContainer = document.querySelector('.comments');
+                commentsContainer.appendChild(commentDiv);
+
+                // Очищаем поля формы
+                document.getElementById('comment-name').value = '';
+                document.getElementById('comment-text').value = '';
+            } else {
+                alert('Пожалуйста, заполните все поля!');
+            }
+        }
+    </script>
 </body>
 </html>
-body {
-    background-image: url('images/ajyy.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white; /* Цвет текста по умолчанию для светлой темы */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход для смены темы */
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-body.dark-theme {
-    background-color: #333; /* Темный фон */
-    color: #eee; /* Светлый текст для темной темы */
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* Для позиционирования кнопки смены темы */
-}
-
-#logo {
-    width: 200px;
-    cursor: pointer; /* Курсор меняется при наведении, показывая, что элемент кликабелен */
-    transition: transform 0.3s ease-in-out; /* Анимация */
-}
-
-#logo:hover {
-    transform: rotate(10deg) scale(1.1); /* Поворот при наведении */
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav img {
-    width: 50px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-nav img:hover {
-    transform: scale(1.1);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto; /* Центрирование по горизонтали */
-    max-width: 800px; /* Ограничение ширины */
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.screenshot {
-    width: 300px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s; /* Плавное изменение размера */
-}
-
-.screenshot:hover {
-    transform: scale(1.05); /* Увеличение при наведении */
-}
-
-/* Раздел новостей */
-#news {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    max-width: 800px;
-    color: white;
-}
-
-.news-item {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #555;
-}
-
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-date {
-    font-size: 0.8em;
-    color: #aaa;
-}
-
-/* Стили для комментариев */
-.comments {
-    margin-top: 20px;
-}
-
-.comment-list {
-    list-style: none;
-    padding: 0;
-}
-
-.comment-list li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-.comment-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.comment-form input, .comment-form textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-.comment-form textarea {
-    resize: vertical;
-    height: 80px;
-}
-
-.comment-form button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.comment-form button:hover {
-    background-color: #367c39;
-}
-
-/* Стили для модального окна */
-.modal {
-    display: none; /* Скрыто по умолчанию */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    color: black;
-    position: relative;
-    border-radius: 5px;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Кнопка смены темы */
-#theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background-color: #428bca;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Адаптивность */
-@media (max-width: 600px) {
-    #logo {
-        width: 150px;
-    }
-
-    nav img {
-        width: 40px;
-        margin: 0 5px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .screenshot {
-        width: 100%; /* Занимает всю ширину на маленьких экранах */
-    }
-}
-body {
-    background-image: url('images/ajyy.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white; /* Цвет текста по умолчанию для светлой темы */
-    transition: background-color 0.3s, color 0.3s; /* Плавный переход для смены темы */
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-body.dark-theme {
-    background-color: #333; /* Темный фон */
-    color: #eee; /* Светлый текст для темной темы */
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative; /* Для позиционирования кнопки смены темы */
-}
-
-#logo {
-    width: 200px;
-    cursor: pointer; /* Курсор меняется при наведении, показывая, что элемент кликабелен */
-    transition: transform 0.3s ease-in-out; /* Анимация */
-}
-
-#logo:hover {
-    transform: rotate(10deg) scale(1.1); /* Поворот при наведении */
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav img {
-    width: 50px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-nav img:hover {
-    transform: scale(1.1);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto; /* Центрирование по горизонтали */
-    max-width: 800px; /* Ограничение ширины */
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.screenshot {
-    width: 300px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s; /* Плавное изменение размера */
-}
-
-.screenshot:hover {
-    transform: scale(1.05); /* Увеличение при наведении */
-}
-
-/* Раздел новостей */
-#news {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    max-width: 800px;
-    color: white;
-}
-
-.news-item {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #555;
-}
-
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-date {
-    font-size: 0.8em;
-    color: #aaa;
-}
-
-/* Стили для комментариев */
-.comments {
-    margin-top: 20px;
-}
-
-.comment-list {
-    list-style: none;
-    padding: 0;
-}
-
-.comment-list li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-.comment-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.comment-form input, .comment-form textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-
-.comment-form textarea {
-    resize: vertical;
-    height: 80px;
-}
-
-.comment-form button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.comment-form button:hover {
-    background-color: #367c39;
-}
-
-/* Стили для модального окна */
-.modal {
-    display: none; /* Скрыто по умолчанию */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    color: black;
-    position: relative;
-    border-radius: 5px;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* Кнопка смены темы */
-#theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background-color: #428bca;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Адаптивность */
-@media (max-width: 600px) {
-    #logo {
-        width: 150px;
-    }
-
-    nav img {
-        width: 40px;
-        margin: 0 5px;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .screenshot {
-        width: 100%; /* Занимает всю ширину на маленьких экранах */
-    }
-}
