@@ -5,7 +5,7 @@
     <title>Minecraft - Официальный сайт</title>
     <style>
         body {
-    background-image: url('C:\Users\Студент\Desktop\настька дашка,т\ajyy.webp'); /* Укажите путь к вашему изображению */
+    background-image: url('фон.webp'); /* Укажите путь к вашему изображению */
     background-size: cover; /* Растягиваем изображение на весь экран */
     background-position: center; /* Центрируем изображение */
     background-attachment: fixed; /* Фон остается фиксированным при прокрутке */   
