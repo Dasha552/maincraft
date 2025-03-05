@@ -65,7 +65,7 @@ if (screenshots[3]) screenshots[3] classList.add('show');
 </head>
 <body>
     <header>
-        <img id="logo" src="C:\Users\Студент\Desktop\настька дашка,т\логотип.webp" alt="Логотип Minecraft"> <!-- Логотип -->
+        <img id="logo" src="логотип.webp"> <!-- Логотип -->
         <nav>
             <img src="иконка.png"> <!-- Иконка 1 -->
             <img src="л.webp" alt="Иконка 2"> <!-- Иконка 2 -->
@@ -75,7 +75,7 @@ if (screenshots[3]) screenshots[3] classList.add('show');
         <h1>Добро пожаловать в Minecraft!</h1>
         <h2>Скриншоты игрового процесса</h2>
         <img class="screenshot" src="иг процес.png"> <!-- Скриншот 1 -->
-        <img class="screenshot" src="C:\Users\Студент\Desktop\настька дашка,т\игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
+        <img class="screenshot" src="игг.webp"> <!-- Скриншот 2 -->
     </main>
 </body>
 </html>
