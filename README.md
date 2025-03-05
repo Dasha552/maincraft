@@ -11,9 +11,9 @@
     <header>
         <img id="logo" src="images/логотип.webp" alt="Логотип Minecraft">
         <nav>
-            <img src="C:\Users\Студент\Desktop\настька дашка,т\иконка.png" alt="Иконка 1">
-            <img src="C:\Users\Студент\Desktop\настька дашка,т\иконка.png" alt="Иконка 2">
-            <img src="C:\Users\Студент\Desktop\настька дашка,т\иконка.png" alt="Иконка 3">
+            <img src="иконка.png" alt="Иконка 1">
+            <img src="иконка.png" alt="Иконка 2">
+            <img src="иконка.png" alt="Иконка 3">
             <a href="#news"><img src="" alt="Новости"></a>
         </nav>
         <button id="theme-toggle">Сменить тему</button>
