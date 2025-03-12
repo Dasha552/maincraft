@@ -88,7 +88,7 @@
     
     <h2>Трейлер игры</h2>
     <video width="600" controls>
-        <source src="game-trailer.mp4" type="video/mp4">
+        <source src="ScreenRecording_03-12-2025 11-26-21_1.mov" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
 
