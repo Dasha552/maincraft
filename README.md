@@ -72,6 +72,11 @@ if (screenshots[3]) screenshots[3] classList.add('show');
     </header>
     <main>
         <h1>Добро пожаловать в Minecraft!</h1>
+        <body>
+    <h1>Информация</h1>
+    <p>Это страница с дополнительной информацией.</p>
+    <p><a href="2part" style="color: #7FFF00; font-size: 20px;">  О игре</a></p>
+</body>
         <h2>Скриншоты игрового процесса</h2>
         <img class="screenshot" src="иг процес.png"> <!-- Скриншот 1 -->
         <img class="screenshot" src="игг.webp"> <!-- Скриншот 2 -->
@@ -308,9 +313,4 @@ color: black;
             }
         }
     </script>
-<body>
-    <h1>Информация</h1>
-    <p>Это страница с дополнительной информацией.</p>
-    <p><a href="2part" style="color: #7FFF00; font-size: 20px;">  О игре</a></p>
-</body>
 
