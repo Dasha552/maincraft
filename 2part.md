@@ -91,7 +91,7 @@
         <h2>Галерея</h2>
         <img src="фон2.jpg" alt="Изображение 1" onclick="фон2.jpg">
         <img src="Снимок экрана.png" alt="Изображение 2" onclick="openImage(this.src)">
-        <img src="image3.jpg" alt="Изображение 3" onclick="openImage(this.src)">
+        <img src="Снимок экрана2.png" alt="Изображение 3" onclick="openImage(this.src)">
         <img src="image4.jpg" alt="Изображение 4" onclick="openImage(this.src)">
         <img src="image5.jpg" alt="Изображение 5" onclick="openImage(this.src)">
     </div>
