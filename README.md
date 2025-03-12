@@ -380,28 +380,5 @@ color: black;
         &copy; 2024 Minecraft - Официальный сайт
     </footer>
     <script>
-        // Форма обратной связи
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('response').innerText = "Спасибо за ваше сообщение! Мы скоро свяжемся с вами.";
-        });
-        // Галерея - открытие модального окна
-        document.querySelectorAll('.gallery-item img').forEach(img => {
-            img.addEventListener('click', function() {
-                document.getElementById('galleryModal').style.display = "block";
-                document.getElementById('img01').src = this.src;
-            });
-        });
-        // Галерея - закрытие модального окна
-        document.querySelector('.close').addEventListener('click', function() {
-            document.getElementById('galleryModal').style.display = "none";
-        });
-        // Галерея - закрытие модального окна при клике вне изображения
-        window.addEventListener('click', function(event) {
-            if (event.target == document.getElementById('galleryModal')) {
-                document.getElementById('galleryModal').style.display = "none";
-            }
-        });
-    </script>
-</body>
-</html>
+   
+       
