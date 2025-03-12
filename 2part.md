@@ -77,16 +77,6 @@
         <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
-     <div class="form-container">
-        <h2>Обратная связь</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Имя" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" rows="4" placeholder="Сообщение" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-        <p id="response-message" style="color: green; display: none;">Ваше сообщение принято, мы скоро ответим!</p>
-    </div>
     <div class="gallery">
         <h2>Галерея</h2>
         <img src="фон2.jpg" alt="Изображение 1" onclick="фон2.jpg">
@@ -105,6 +95,16 @@
         <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
     </div>
     <script>
+        <div class="form-container">
+        <h2>Обратная связь</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="4" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <p id="response-message" style="color: green; display: none;">Ваше сообщение принято, мы скоро ответим!</p>
+    </div>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             document.getElementById('response-message').style.display = 'block';
