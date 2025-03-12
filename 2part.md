@@ -15,23 +15,19 @@
         h1, h2 {
             color: #333;
         }
-
         img {
             max-width: 100%;
             height: auto;
             transition: transform 0.2s;
         }
-
         img:hover {
             transform: scale(1.05);
         }
-
         .gallery img {
             cursor: pointer;
             max-width: 200px;
             margin: 10px;
         }
-
         .form-container {
             background: #fff;
             padding: 20px;
@@ -39,7 +35,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-
         .form-container input, .form-container textarea {
             width: 100%;
             padding: 10px;
@@ -77,13 +72,11 @@
     <h1>О нашей игре</h1>
     <p>Творческая игра, в которой основное внимание уделяется строительству.</p>
     <img src="лох.png" alt="Изображение игры">
-    
     <h2>Трейлер игры</h2>
     <video width="600" controls>
         <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="vid">
         Ваш браузер не поддерживает видео.
     </video>
-
     <div class="form-container">
         <h2>Обратная связь</h2>
         <form id="contact-form">
@@ -94,7 +87,6 @@
         </form>
         <p id="response-message" style="color: green; display: none;">Ваше сообщение принято, мы скоро ответим!</p>
     </div>
-
     <div class="gallery">
         <h2>Галерея</h2>
         <img src="image1.jpg" alt="Изображение 1" onclick="openImage(this.src)">
@@ -103,19 +95,15 @@
         <img src="image4.jpg" alt="Изображение 4" onclick="openImage(this.src)">
         <img src="image5.jpg" alt="Изображение 5" onclick="openImage(this.src)">
     </div>
-
     <div class="faq">
         <h2>Часто задаваемые вопросы (FAQ)</h2>
         <h3 onclick="toggleFAQ(1)">Как установить игру?</h3>
         <p id="faq-answer-1">Инструкции по установке игры можно найти на странице загрузки.</p>
-        
         <h3 onclick="toggleFAQ(2)">Есть ли системные требования?</h3>
         <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
-        
         <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
         <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
     </div>
-
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -126,7 +114,6 @@ function toggleFAQ(number) {
             const answer = document.getElementById(faq-answer-${number});
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         }
-
         function openImage(src) {
             const imgWindow = window.open("", "_blank");
             imgWindow.document.write(<img src="${src}" style="max-width:100%;"/>);
