@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -102,3 +101,24 @@
         <p id="faq-answer-1">Инструкции по установке игры можно найти на странице загрузки.</p>
         <h3 onclick="toggleFAQ(2)">Есть ли системные требования?</h3>
         <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
+        <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
+        <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
+    </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('response-message').style.display = 'block';
+            this.reset();
+        });
+        function toggleFAQ(number) {
+            const answer = document.getElementById(`faq-answer-${number}`);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+        function openImage(src) {
+            const imgWindow = window.open("", "_blank");
+            imgWindow.document.write(`<img src="${src}" style="max-width:100%;"/>`);
+            imgWindow.document.close(); // Закрываем документ для корректного отображения
+        }
+    </script>
+</body>
+</html>
