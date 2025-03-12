@@ -12,7 +12,6 @@
             margin: 0;
             padding: 20px;
         }
-
         h1, h2 {
             color: #333;
         }
@@ -48,7 +47,6 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
         .form-container button {
             background: #5cb85c;
             color: #fff;
@@ -58,20 +56,16 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-
         .form-container button:hover {
             background: #4cae4c;
         }
-
         .faq {
             margin-top: 20px;
         }
-
         .faq h3 {
             cursor: pointer;
-            color: #007bff;
+        color: #007bff;
         }
-
         .faq p {
             display: none;
             margin: 0;
@@ -80,9 +74,8 @@
     </style>
 </head>
 <body>
-
     <h1>О нашей игре</h1>
-    <p>Описание игры будет здесь. Вы узнаете об ее особенностях, механиках и многом другом.</p>
+    <p>Творческая игра, в которой основное внимание уделяется строительству.</p>
     <img src="лох.png" alt="Изображение игры">
     
     <h2>Трейлер игры</h2>
