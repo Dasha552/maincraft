@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -59,7 +60,7 @@
         }
         .faq h3 {
             cursor: pointer;
-        color: #007bff;
+            color: #007bff;
         }
         .faq p {
             display: none;
@@ -74,7 +75,7 @@
     <img src="лох.png" alt="Изображение игры">
     <h2>Трейлер игры</h2>
     <video width="600" controls>
-        <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="vid">
+        <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="video/mp4">
         Ваш браузер не поддерживает видео.
     </video>
     <div class="form-container">
@@ -89,7 +90,7 @@
     </div>
     <div class="gallery">
         <h2>Галерея</h2>
-        <img src="image1.jpg" alt="Изображение 1" onclick="фон2.jpg">
+        <img src="image1.jpg" alt="фон2.jpg" onclick="openImage(this.src)">
         <img src="image2.jpg" alt="Изображение 2" onclick="openImage(this.src)">
         <img src="image3.jpg" alt="Изображение 3" onclick="openImage(this.src)">
         <img src="image4.jpg" alt="Изображение 4" onclick="openImage(this.src)">
@@ -101,23 +102,3 @@
         <p id="faq-answer-1">Инструкции по установке игры можно найти на странице загрузки.</p>
         <h3 onclick="toggleFAQ(2)">Есть ли системные требования?</h3>
         <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
-        <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
-        <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
-    </div>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('response-message').style.display = 'block';
-            this.reset();
-        });
-function toggleFAQ(number) {
-            const answer = document.getElementById(faq-answer-${number});
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        }
-        function openImage(src) {
-            const imgWindow = window.open("", "_blank");
-            imgWindow.document.write(<img src="${src}" style="max-width:100%;"/>);
-        }
-    </script>
-</body>
-</html>
