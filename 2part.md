@@ -119,16 +119,6 @@
             imgWindow.document.write(`<img src="${src}" style="max-width:100%;"/>`);
             imgWindow.document.close(); // Закрываем документ для корректного отображения
         }
-         <div class="form-container">
-        <h2>Обратная связь</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Имя" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" rows="4" placeholder="Сообщение" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-        <p id="response-message" style="color: green; display: none;">Ваше сообщение принято, мы скоро ответим!</p>
-    </div>
     </script>
 </body>
 </html>
