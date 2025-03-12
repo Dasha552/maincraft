@@ -311,5 +311,5 @@ color: black;
 <body>
     <h1>Информация</h1>
     <p>Это страница с дополнительной информацией.</p>
-    <p><a href="2part" style="color: #7FFF00; font-size: 20px;">  тык</a></p>
+    <p><a href="2part" style="color: #7FFF00; font-size: 20px;">  О игре</a></p>
 </body>
