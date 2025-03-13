@@ -158,15 +158,14 @@
     margin: 20px 0;
 }
 .nav a {
-           position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+    background-color: #008000;
+    color: white;
+    color: #008000;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 10px 30px;
+    padding: 10px 20px;
+    border:  #008000;
 }
 .nav a:
         { /* Убрана лишняя двоеточие */
