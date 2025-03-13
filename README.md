@@ -150,26 +150,28 @@
         }
         #theme-toggle:hover {
             background-color: #367c39;
-        }
-               .nav {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-        .nav a {
-            color: #008000 ;
-            font-size: 24px;
-            text-decoration: none;
-            margin: 10px 30px;
-            padding: 10px 20px;
-            border: 2px solid #008000 ;
-            transition: background-color : white;
-        }
-        .nav a: {
-            background-color: #008000 ;
-            color: white;
-        }
+       body {
+    background-color: #367c39; /* Непрозрачный фон */
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.nav a {
+    color: #008000;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 10px 30px;
+    padding: 10px 20px;
+    border: 2px solid #008000;
+    transition: background-color 0.3s; /* Исправлено */
+}
+.nav a:hover { /* Убрана лишняя двоеточие */
+    background-color: #008000;
+    color: white;
+}
     </style>
     </head>
     <body>
