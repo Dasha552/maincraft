@@ -8,13 +8,15 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #008000; /* Темно-зеленый фон */
-            color: #fff; /* Белый текст для контраста */
+            background-image: url('background.jpg'); /* Фоновое изображение */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Цвет текста */
             margin: 0;
             padding: 20px;
         }
         h1, h2 {
-            color: #fff; /* Белый цвет заголовков */
+            color: #fff; /* Цвет заголовков */
         }
         img {
             max-width: 100%;
@@ -28,11 +30,11 @@
             cursor: pointer;
             max-width: 200px;
             margin: 10px;
-            border: 2px solid #fff; /* Белая рамка для изображений */
-            border-radius: 5px; /* Закругленные углы */
+            border-radius: 5px; /* Закругленные углы для изображений */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для изображений */
         }
         .form-container {
-            background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+            background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -62,7 +64,7 @@
         }
         .faq h3 {
             cursor: pointer;
-            color: #fff; /* Белый цвет для вопросов */
+            color: #007bff;
         }
         .faq p {
             display: none;
@@ -97,36 +99,48 @@
         <h3 onclick="toggleFAQ(1)">Как установить игру?</h3>
         <p id="faq-answer-1">Инструкции по установке игры можно найти на странице загрузки.</p>
         <h3 onclick="toggleFAQ(2)">Есть ли системные требования?</h3>
-                <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
+         <p id="faq-answer-2">Да, минимальные системные требования указаны на странице продукта.</p>
         <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
-        <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
+        <p id="faq-answer-3">Вы можете связаться с поддержкой через форму ниже.</p>
     </div>
-    
+
     <div class="form-container">
-        <h2>Обратная связь</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Имя" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+        <h2>Форма обратной связи</h2>
+        <form id="contact-form" onsubmit="return submitForm()">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="email" id="email" placeholder="Ваш email" required>
+            <textarea id="message" placeholder="Ваше сообщение" rows="4" required></textarea>
             <button type="submit">Отправить</button>
         </form>
+        <p id="form-response" style="display:none;"></p>
     </div>
 
     <script>
-        function openImage(src) {
-            window.open(src, '_blank');
-        }
-
         function toggleFAQ(index) {
             const answer = document.getElementById(`faq-answer-${index}`);
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         }
 
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Спасибо за ваше сообщение!');
-            this.reset();
-        });
+        function openImage(src) {
+            const imgWindow = window.open("", "Image", "width=600,height=400");
+            imgWindow.document.write(`<img src="${src}" style="width:100%; height:auto;">`);
+        }
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Здесь можно добавить код для отправки данных на сервер
+
+            const response = document.getElementById('form-response');
+            response.innerText = `Спасибо, ${name}! Ваше сообщение отправлено.`;
+            response.style.display = 'block';
+
+            // Очистка формы
+            document.getElementById('contact-form').reset();
+            return false; // Предотвращение перезагрузки страницы
+        }
     </script>
 </body>
 </html>
