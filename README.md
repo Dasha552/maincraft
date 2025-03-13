@@ -151,6 +151,26 @@
         #theme-toggle:hover {
             background-color: #367c39;
         }
+               .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .nav a {
+            color: #8B0000;
+            font-size: 24px;
+            text-decoration: none;
+            margin: 10px 30px;
+            padding: 10px 20px;
+            border: 2px solid #8B0000;
+            border-radius: 5px;
+            transition: background-color : white;
+        }
+        .nav a:hover {
+            background-color: #8B0000;
+            color: white;
+        }
     </style>
     </head>
     <body>
