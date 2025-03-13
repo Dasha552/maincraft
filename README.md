@@ -151,32 +151,6 @@
         #theme-toggle:hover {
             background-color: #367c39;
         }
-        nav {
-            margin: 20px 0;
-            background-color:black;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-        }
-        nav img {
-            width: 50px;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
-            opacity: 0.7;
-        }
-        nav img:hover {
-            transform: scale(1.1);
-            opacity: 1;
-        }
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background-color:#042601;
     </style>
     </head>
     <body>
