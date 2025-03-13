@@ -164,7 +164,7 @@
     margin: 10px 30px;
     padding: 10px 20px;
     border: 2px solid #008000;
-    transition: background-color 0.3s; /* Исправлено */
+    transition: ; /* Исправлено */
 }
 .nav a:hover { /* Убрана лишняя двоеточие */
     background-color: #008000;
