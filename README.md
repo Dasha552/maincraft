@@ -116,7 +116,7 @@
         #comment-form {
             margin-top: 20px;
         }
-                #comment-form input[type="text"],
+         #comment-form input[type="text"],
         #comment-form textarea {
             width: 100%;
             padding: 8px;
@@ -125,7 +125,7 @@
             border-radius: 4px;
         }
         #comment-form button {
-            background-color: #5cb85c;
+            background-color: #008000;
             color: white;
             padding: 10px 15px;
             border: none;
