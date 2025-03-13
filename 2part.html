@@ -26,13 +26,21 @@
         img:hover {
             transform: scale(1.05);
         }
-        .gallery img {
-            cursor: pointer;
-            max-width: 200px;
-            margin: 10px;
-            border-radius: 5px; /* Закругленные углы для изображений */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для изображений */
-        }
+       .gallery {
+           display: flex;
+           flex-direction: column; /* Расположение элементов сверху вниз */
+         align-items: center; /* Центрирование изображений по горизонтали */
+      }
+
+         .gallery img {
+     cursor: pointer;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 5px; /* Закругленные углы для изображений */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для изображений */
+    display: block; /* Изображения ведут себя как блочные элементы */
+    }
+
         .form-container {
         background: #fff; /* Белый фон */
         color: black; /* Черный текст */
