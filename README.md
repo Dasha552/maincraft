@@ -188,7 +188,7 @@
     <main>
         <h1>Добро пожаловать в Minecraft!</h1>
         <h2>Скриншоты игрового процесса</h2>
-        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1"> <!-- Скриншот 1 -->
+        <img class="screenshot" src="иг процес.png" alt="Скриншот 1"> <!-- Скриншот 1 -->
         <img class="screenshot" src="ввввввввввввв.png" alt="Скриншот 2"> <!-- Скриншот 2 -->
         <!-- Модальное окно -->
         <div id="myModal" class="modal">
