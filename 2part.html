@@ -6,16 +6,14 @@
     <title>О игре</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            color: #333;
         }
         h1, h2 {
             color: #333;
-            text-align: center;
         }
         img {
             max-width: 100%;
@@ -29,16 +27,13 @@
             cursor: pointer;
             max-width: 200px;
             margin: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .form-container {
             background: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            max-width: 600px;
+            margin-top: 20px;
         }
         .form-container input, .form-container textarea {
             width: 100%;
@@ -46,24 +41,18 @@
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
-            transition: border 0.3s;
-        }
-        .form-container input:focus, .form-container textarea:focus {
-            border: 1px solid #5cb85c;
-            outline: none;
         }
         .form-container button {
-            background: #5cb85c;
+            background: #008000; /* Новый цвет */
             color: #fff;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s;
-            width: 100%;
         }
         .form-container button:hover {
-            background: #4cae4c;
+            background: #006400; /* Темнее для эффекта наведения */
         }
         .faq {
             margin-top: 20px;
@@ -71,22 +60,11 @@
         .faq h3 {
             cursor: pointer;
             color: #007bff;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .faq h3:hover {
-            background: #e7f3ff;
         }
         .faq p {
             display: none;
             margin: 0;
-            padding: 10px;
-            border-left: 4px solid #007bff;
-            background: #f9f9f9;
-            border-radius: 5px;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -95,33 +73,20 @@
     <p>Творческая игра, в которой основное внимание уделяется строительству.</p>
     <img src="лох.png" alt="Изображение игры">
     <h2>Трейлер игры</h2>
-    <div style="text-align: center;">
-        <video width="600" controls>
-            <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-    </div>
-    <div class="form-container">
-        <h2>Обратная связь</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Имя" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" rows="4" placeholder="Сообщение" required></textarea>
-            <button type="submit">Отправить</button>
-        </form>
-        <p id="response-message" style="color: green; display: none;">Ваше сообщение принято, мы скоро ответим!</p>
-    </div>
+    <video width="600" controls>
+        <source src="ScreenRecording_03-12-2025 12-12-14_1.mov" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    
     <div class="gallery">
         <h2>Галерея</h2>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <img src="фон2.jpg" alt="Изображение 1" onclick="openImage(this.src)">
-           
-            <img src="Снимок экрана 4.png" alt="Изображение 2" onclick="openImage(this.src)">
-            <img src="Снимок экрана2.png" alt="Изображение 3" onclick="openImage(this.src)">
-            <img src="Снимок экрана 3.png" alt="Изображение 4" onclick="openImage(this.src)">
-            <img src="Снимок экрана 5.png" alt="Изображение 5" onclick="openImage(this.src)">
-        </div>
+        <img src="фон2.jpg" alt="Изображение 1" onclick="openImage(this.src)">
+        <img src="Снимок экрана 4.png" alt="Изображение 2" onclick="openImage(this.src)">
+        <img src="Снимок экрана2.png" alt="Изображение 3" onclick="openImage(this.src)">
+        <img src="Снимок экрана 3.png" alt="Изображение 4" onclick="openImage(this.src)">
+        <img src="Снимок экрана 5.png" alt="Изображение 5" onclick="openImage(this.src)">
     </div>
+    
     <div class="faq">
         <h2>Часто задаваемые вопросы (FAQ)</h2>
         <h3 onclick="toggleFAQ(1)">Как установить игру?</h3>
@@ -131,21 +96,32 @@
         <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
         <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
     </div>
+    
+    <div class="form-container">
+        <h2>Обратная связь</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="4" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            document.getElementById('response-message').style.display = 'block';
-            this.reset();
-        });
-        function toggleFAQ(number) {
-            const answer = document.getElementById(`faq-answer-${number}`);
+        function openImage(src) {
+            window.open(src, '_blank');
+        }
+
+        function toggleFAQ(index) {
+            const answer = document.getElementById(`faq-answer-${index}`);
             answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
         }
-        function openImage(src) {
-            const imgWindow = window.open("", "_blank");
-            imgWindow.document.write(`<img src="${src}" style="max-width:100%;"/>`);
-            imgWindow.document.close(); // Закрываем документ для корректного отображения
-        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Спасибо за ваше сообщение!');
+            this.reset();
+        });
     </script>
 </body>
 </html>
