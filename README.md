@@ -92,7 +92,7 @@
             color: #fff;
         }
         .dark-mode main {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 1.0);
         }
         /* Стили для новостей и комментариев */
         #news-section {
