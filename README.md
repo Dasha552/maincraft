@@ -158,17 +158,17 @@
             margin: 20px 0;
         }
         .nav a {
-            color: #8B0000;
+            color: #008000 ;
             font-size: 24px;
             text-decoration: none;
             margin: 10px 30px;
             padding: 10px 20px;
-            border: 2px solid #8B0000;
+            border: 2px solid #008000 ;
             border-radius: 5px;
             transition: background-color : white;
         }
         .nav a:hover {
-            background-color: #8B0000;
+            background-color: #008000 ;
             color: white;
         }
     </style>
