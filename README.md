@@ -152,7 +152,11 @@
             background-color: #367c39;
         }
     </style>
-</head>
+    </head>
+    <body>
+<div class="nav">
+    <a href="2part.html">О игре</a>
+</div>
 <body>
     <button id="theme-toggle">Поменять тему</button>
     <header>
