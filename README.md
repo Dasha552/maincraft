@@ -158,13 +158,15 @@
     margin: 20px 0;
 }
 .nav a {
-    color: #008000;
-    font-size: 24px;
-    text-decoration: none;
-    margin: 10px 30px;
-    padding: 10px 20px;
-    border: 2px solid #008000;
-    /* Исправлено */
+           position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
 }
 .nav a:
         { /* Убрана лишняя двоеточие */
