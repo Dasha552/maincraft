@@ -160,7 +160,7 @@
 .nav a {
     background-color: #008000;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     margin: 10px 30px;
     padding: 10px 20px;
