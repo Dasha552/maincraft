@@ -179,9 +179,9 @@
 <body>
     <button id="theme-toggle">Поменять тему</button>
     <header>
-        <img id="logo" src="логотип.webp" alt="Логотип"> <!-- Логотип -->
+        <img id="logo" src="IMG_20250313_175037.jpg" alt="Логотип"> <!-- Логотип -->
         <nav>
-            <img src="иконка.png" alt="Иконка 1"> <!-- Иконка 1 -->
+            <img src="IMG_20250313_174832.jpg" alt="Иконка 1"> <!-- Иконка 1 -->
             <img src="л.webp" alt="Иконка 2"> <!-- Иконка 2 -->
         </nav>
     </header>
