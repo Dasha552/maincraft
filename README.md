@@ -150,8 +150,6 @@
         }
         #theme-toggle:hover {
             background-color: #367c39;
-       body {
-    background-color: #367c39; /* Непрозрачный фон */
 }
 .nav {
     display: flex;
