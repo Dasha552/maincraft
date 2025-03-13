@@ -1,4 +1,3 @@
-
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -123,9 +122,8 @@
         <p>Это страница с дополнительной информацией.</p>
         <p><a href="2part" style="color: #7FFF00; font-size: 20px;">О игре</a></p>
         <h2>Скриншоты игрового процесса</h2>
-        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1
         <img class="screenshot" src="иг процесс.png" alt="Скриншот 1"> <!-- Скриншот 1 -->
-        <img class="screenshot" src="игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
+        ="игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
     </main>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
@@ -182,3 +180,4 @@
     </script>
 </body>
 </html>
+
