@@ -8,12 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #008000; /* Темно-зеленый фон */
+            color: #fff; /* Белый текст для контраста */
             margin: 0;
             padding: 20px;
         }
         h1, h2 {
-            color: #333;
+            color: #fff; /* Белый цвет заголовков */
         }
         img {
             max-width: 100%;
@@ -27,12 +28,14 @@
             cursor: pointer;
             max-width: 200px;
             margin: 10px;
+            border: 2px solid #fff; /* Белая рамка для изображений */
+            border-radius: 5px; /* Закругленные углы */
         }
         .form-container {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             margin-top: 20px;
         }
         .form-container input, .form-container textarea {
@@ -59,12 +62,14 @@
         }
         .faq h3 {
             cursor: pointer;
-            color: #007bff;
+            color: #fff; /* Белый цвет для вопросов */
         }
         .faq p {
             display: none;
             margin: 0;
             padding: 10px 0;
+            background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для ответов */
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -92,7 +97,7 @@
         <h3 onclick="toggleFAQ(1)">Как установить игру?</h3>
         <p id="faq-answer-1">Инструкции по установке игры можно найти на странице загрузки.</p>
         <h3 onclick="toggleFAQ(2)">Есть ли системные требования?</h3>
-        <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
+                <p id="faq-answer-2">Да, минимальные системные требования указаны на странице игры.</p>
         <h3 onclick="toggleFAQ(3)">Как связаться с поддержкой?</h3>
         <p id="faq-answer-3">Вы можете связаться с нами через форму обратной связи или по email.</p>
     </div>
@@ -125,3 +130,4 @@
     </script>
 </body>
 </html>
+
