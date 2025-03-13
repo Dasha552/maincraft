@@ -165,6 +165,7 @@
     margin: 10px 30px;
     padding: 10px 20px;
     border:  #008000;
+    border-radius: 4px;
 }
 .nav a:
         { /* Убрана лишняя двоеточие */
