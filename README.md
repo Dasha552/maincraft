@@ -74,14 +74,45 @@
             transform: scale(1.05);
         }
         /* Остальные стили остаются без изменений */
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed; 
+            z-index: 1000; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <button id="theme-toggle">поменять тему</button>
     <header>
-        <img id="logo" src="логотип.webp"> <!-- Логотип -->
+        <img id="logo" src="логотип.webp" alt="Логотип"> <!-- Логотип -->
         <nav>
-            <img src="иконка.png"> <!-- Иконка 1 -->
+            <img src="иконка.png" alt="Иконка 1"> <!-- Иконка 1 -->
             <img src="л.webp" alt="Иконка 2"> <!-- Иконка 2 -->
         </nav>
     </header>
@@ -91,8 +122,8 @@
         <p>Это страница с дополнительной информацией.</p>
         <p><a href="2part" style="color: #7FFF00; font-size: 20px;">О игре</a></p>
         <h2>Скриншоты игрового процесса</h2>
-        <img class="screenshot" src="иг процесс.png"> <!-- Скриншот 1 -->
-        <img class="screenshot" src="игг.webp"> <!-- Скриншот 2 -->
+        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1"> <!-- Скриншот 1
+        <img class="screenshot" src="игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
     </main>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
@@ -113,7 +144,7 @@
                 <div class="comment">
                     <b>игрок1:</b> шикарное обновление!
                 </div>
-                                <div class="comment">
+                <div class="comment">
                     <b>игрок2:</b> жду новых возможностей!
                 </div>
             </div>
@@ -146,5 +177,3 @@
     </script>
 </body>
 </html>
-
-               
