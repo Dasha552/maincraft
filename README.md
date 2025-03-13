@@ -1,3 +1,4 @@
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -76,22 +77,22 @@
         /* Остальные стили остаются без изменений */
         .modal {
             display: none; /* Скрыто по умолчанию */
-            position: fixed; 
-            z-index: 1000; 
+            position: fixed;
+            z-index: 1000;
             left: 0;
             top: 0;
-            width: 100%; 
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
         }
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto; 
+            margin: 15% auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 80%; 
+            width: 80%;
         }
         .close {
             color: #aaa;
@@ -122,7 +123,8 @@
         <p>Это страница с дополнительной информацией.</p>
         <p><a href="2part" style="color: #7FFF00; font-size: 20px;">О игре</a></p>
         <h2>Скриншоты игрового процесса</h2>
-        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1"> <!-- Скриншот 1
+        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1
+        <img class="screenshot" src="иг процесс.png" alt="Скриншот 1"> <!-- Скриншот 1 -->
         <img class="screenshot" src="игг.webp" alt="Скриншот 2"> <!-- Скриншот 2 -->
     </main>
     <!-- Модальное окно -->
@@ -163,9 +165,12 @@
         // Модальное окно
         const modal = document.getElementById("myModal");
         const span = document.getElementsByClassName("close")[0];
-        window.onload = function() {
+        // Показать модальное окно при нажатии на логотип
+        const logo = document.getElementById("logo");
+        logo.onclick = function() {
             modal.style.display = "block";
         }
+        // Закрытие модального окна
         span.onclick = function() {
             modal.style.display = "none";
         }
